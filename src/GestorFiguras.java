@@ -12,4 +12,9 @@ public abstract class GestorFiguras {
         return suma;
 
     }
+    public int compareTo (GestorFiguras f)
+    {
+        return Double.compare(this.area(),f.area());
+
+    }
 }

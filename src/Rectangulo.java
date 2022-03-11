@@ -13,4 +13,5 @@ public class Rectangulo extends GestorFiguras{
         return this.l1*this.l2;
     }
 
+
 }
