@@ -1,8 +1,6 @@
 import java.util.Arrays;
 
-public abstract class GestorFiguras {
-
-    public abstract double area();
+public class GestorFiguras {
 
     public static double Suma(Figura[] v)
     {
@@ -14,16 +12,11 @@ public abstract class GestorFiguras {
         return suma;
 
     }
-//    public int compareTo (GestorFiguras f)
-//    {
-//        return Double.compare(this.area(),f.area());
-//
-//    }
 
-    public static Figura[] Ordena(Figura[] v)
+    public static void Ordena(Figura[] v)
     {
         Arrays.sort(v);
-        return v;
+
     }
 
 
@@ -44,7 +37,7 @@ public abstract class GestorFiguras {
 
         System.out.println("La suma total es: " + SumaTotal);
 
-//        Figura[] ordenado = Ordena(v);
+//        Ordena(v);
 //
 //        System.out.println(v[0].area());
 //        System.out.println(v[1].area());
