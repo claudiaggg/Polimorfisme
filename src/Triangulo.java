@@ -11,4 +11,6 @@ public class Triangulo extends GestorFiguras {
     public double area() {
         return (this.h*this.b)/2;
     }
+
+
 }

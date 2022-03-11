@@ -14,11 +14,11 @@ public abstract class GestorFiguras {
         return suma;
 
     }
-    public int compareTo (GestorFiguras f)
-    {
-        return Double.compare(this.area(),f.area());
-
-    }
+//    public int compareTo (GestorFiguras f)
+//    {
+//        return Double.compare(this.area(),f.area());
+//
+//    }
 
     public static GestorFiguras[] Ordena(GestorFiguras[] v)
     {
