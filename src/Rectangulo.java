@@ -1,4 +1,4 @@
-public class Rectangulo extends GestorFiguras{
+public class Rectangulo extends Figura{
     private double l1;
     private double l2;
 

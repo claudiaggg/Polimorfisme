@@ -4,10 +4,10 @@ public abstract class GestorFiguras {
 
     public abstract double area();
 
-    public static double Suma(GestorFiguras[] v)
+    public static double Suma(Figura[] v)
     {
         double suma=0;
-        for (GestorFiguras f: v)
+        for (Figura f: v)
         {
             suma+=f.area();
         }
@@ -20,7 +20,7 @@ public abstract class GestorFiguras {
 //
 //    }
 
-    public static GestorFiguras[] Ordena(GestorFiguras[] v)
+    public static Figura[] Ordena(Figura[] v)
     {
         Arrays.sort(v);
         return v;
@@ -29,13 +29,13 @@ public abstract class GestorFiguras {
 
     public static void main(String[] args)
     {
-        GestorFiguras c1 = new Circulo(30);
-        GestorFiguras t1 = new Triangulo(20,10);
-        GestorFiguras c2 = new Cuadrado(37);
-        GestorFiguras r1 = new Rectangulo(70,10);
+        Figura c1 = new Circulo(30);
+        Figura t1 = new Triangulo(20,10);
+        Figura c2 = new Cuadrado(37);
+        Figura r1 = new Rectangulo(70,10);
 
 
-        GestorFiguras[] v= {c1, t1, c2, r1};
+        Figura[] v= {c1, t1, c2, r1};
         double SumaTotal = Suma(v);
         System.out.println(c1.area());
         System.out.println(c2.area());
@@ -44,13 +44,13 @@ public abstract class GestorFiguras {
 
         System.out.println("La suma total es: " + SumaTotal);
 
-        GestorFiguras[] ordenado = Ordena(v);
-
-        System.out.println(v[0].area());
-        System.out.println(v[1].area());
-
-        System.out.println(v[2].area());
-        System.out.println(v[3].area());
+//        Figura[] ordenado = Ordena(v);
+//
+//        System.out.println(v[0].area());
+//        System.out.println(v[1].area());
+//
+//        System.out.println(v[2].area());
+//        System.out.println(v[3].area());
 
 
 

@@ -1,6 +1,6 @@
 import java.lang.Math;
 
-public class Circulo extends GestorFiguras{
+public class Circulo extends Figura{
     private double r;
 
     public Circulo (double r)

@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.lang.Double;
 
 public abstract class Figura implements Comparable<Figura> {
     public Figura(){}
@@ -7,6 +7,6 @@ public abstract class Figura implements Comparable<Figura> {
 
     public int CompareTo(Figura f)
     {
-        return Double.compare(this.area(),f.area());
+        return Double.compareTo(this.area(),f.area());
     }
 }
