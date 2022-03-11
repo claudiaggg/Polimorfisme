@@ -4,7 +4,7 @@ public abstract class GestorFiguras {
 
     public abstract double area();
 
-    public double Suma(GestorFiguras[] v)
+    public static double Suma(GestorFiguras[] v)
     {
         double suma=0;
         for (GestorFiguras f: v)
@@ -20,9 +20,30 @@ public abstract class GestorFiguras {
 
     }
 
-    public GestorFiguras[] Ordena(GestorFiguras[] v)
+    public static GestorFiguras[] Ordena(GestorFiguras[] v)
     {
         Arrays.sort(v);
         return v;
+    }
+
+
+    public static void main(String[] args)
+    {
+        GestorFiguras c1= new Circulo(30);
+        GestorFiguras t1= new Triangulo(20,10);
+        GestorFiguras c2 = new Cuadrado(37);
+        GestorFiguras r1 = new Rectangulo(70,10);
+
+
+        GestorFiguras[] v= {c1, t1, c2, r1};
+        double SumaTotal = Suma(v);
+        System.out.println(c1.area());
+        System.out.println(c2.area());
+        System.out.println(t1.area());
+        System.out.println(r1.area());
+        System.out.println("La suma total es: " + SumaTotal);
+
+
+
     }
 }
