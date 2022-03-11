@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public abstract class GestorFiguras {
 
     public abstract double area();
@@ -16,5 +18,11 @@ public abstract class GestorFiguras {
     {
         return Double.compare(this.area(),f.area());
 
+    }
+
+    public GestorFiguras[] Ordena(GestorFiguras[] v)
+    {
+        Arrays.sort(v);
+        return v;
     }
 }
