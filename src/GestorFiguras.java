@@ -1,4 +1,4 @@
-public class GestorFiguras {
+public abstract class GestorFiguras {
 
-    // AAAAAA
+    public abstract double area();
 }
