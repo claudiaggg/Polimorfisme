@@ -1,4 +1,5 @@
 public class Triangulo extends GestorFiguras {
+
     private double h; //Altura
     private double b; //Base
 
@@ -8,6 +9,6 @@ public class Triangulo extends GestorFiguras {
     }
 
     public double area() {
-        return (h*b)/2;
+        return (this.h*this.b)/2;
     }
 }
