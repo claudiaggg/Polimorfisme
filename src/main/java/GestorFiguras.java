@@ -2,8 +2,8 @@ import java.util.Arrays;
 
 public class GestorFiguras {
 
-    public static double Suma(Figura[] v)
-    {
+        public static double Suma(Figura[] v)
+        {
         double suma=0;
         for (Figura f: v)
         {
@@ -37,13 +37,13 @@ public class GestorFiguras {
 
         System.out.println("La suma total es: " + SumaTotal);
 
-//        Ordena(v);
-//
-//        System.out.println(v[0].area());
-//        System.out.println(v[1].area());
-//
-//        System.out.println(v[2].area());
-//        System.out.println(v[3].area());
+        Ordena(v);
+
+        System.out.println(v[0].area());
+        System.out.println(v[1].area());
+
+        System.out.println(v[2].area());
+        System.out.println(v[3].area());
 
 
 
